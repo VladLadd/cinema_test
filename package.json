@@ -12,7 +12,8 @@
     "preview": "vite preview",
     "build-only": "vite build",
     "type-check": "vue-tsc --build",
-    "format": "prettier --write src"
+    "format": "prettier --write src",
+    "generate-api": "openapi --input http://localhost:3022/api-docs/ --output ./src/api/cinema --client axios"
   },
   "dependencies": {
     "pinia": "^3.0.3",
@@ -20,7 +21,8 @@
     "vite-plugin-vuetify": "^2.1.2",
     "vue": "^3.5.22",
     "vue-router": "^4.5.1",
-    "vuetify": "^3.10.5"
+    "vuetify": "^3.10.5",
+    "axios": "^1.7.7"
   },
   "devDependencies": {
     "@tsconfig/node22": "^22.0.2",
@@ -32,6 +34,7 @@
     "typescript": "~5.9.0",
     "vite": "^7.1.7",
     "vite-plugin-vue-devtools": "^8.0.2",
-    "vue-tsc": "^3.1.0"
+    "vue-tsc": "^3.1.0",
+    "openapi-typescript-codegen": "^0.29.0"
   }
 }
